@@ -33,9 +33,19 @@ function setTextElementValueById(elementId, value) {
   element.innerText = value;
 }
 
+let currentTotalPrice = 0;
+
 // Append seat info in the page
 function addSeatToPurchased(seatName, seatClass, SeatPrice) {
   const purchasedSeatContainer = document.getElementById("purchasedSeat");
+
+  // calculate total price
+  let seatPriceValue = parseInt(SeatPrice)
+  currentTotalPrice = currentTotalPrice + seatPriceValue
+
+//   push currentTotalPrice to totalprice
+document.getElementById("totalPrice").innerText = currentTotalPrice
+
   // set a div to append
   const setDiv = document.createElement("div");
   setDiv.classList.add("flex", "justify-between");
