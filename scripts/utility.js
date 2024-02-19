@@ -40,11 +40,11 @@ function addSeatToPurchased(seatName, seatClass, SeatPrice) {
   const purchasedSeatContainer = document.getElementById("purchasedSeat");
 
   // calculate total price
-  let seatPriceValue = parseInt(SeatPrice)
-  currentTotalPrice = currentTotalPrice + seatPriceValue
+  let seatPriceValue = parseInt(SeatPrice);
+  currentTotalPrice = currentTotalPrice + seatPriceValue;
 
-//   push currentTotalPrice to totalprice
-document.getElementById("totalPrice").innerText = currentTotalPrice
+  //   push currentTotalPrice to totalprice
+  document.getElementById("totalPrice").innerText = currentTotalPrice;
 
   // set a div to append
   const setDiv = document.createElement("div");
@@ -62,4 +62,18 @@ document.getElementById("totalPrice").innerText = currentTotalPrice
   setDiv.appendChild(seatPriceElement);
   // Append setDiv to the purchased seats container
   purchasedSeatContainer.appendChild(setDiv);
+}
+
+function discountPrice() {
+  const couponCode = document.getElementById("couponText").value;
+  if (couponCode === "NEW15") {
+    const discountedPrice = currentTotalPrice * 0.85;
+    document.getElementById("grandTotal").innerText =
+      discountedPrice.toFixed(2);
+  }
+  if (couponCode === "Couple 20") {
+    const discountedPrice = currentTotalPrice * 0.8;
+    document.getElementById("grandTotal").innerText =
+      discountedPrice.toFixed(2);
+  } 
 }
