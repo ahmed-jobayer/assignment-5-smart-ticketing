@@ -28,7 +28,28 @@ function getTextElementValueById(elementId) {
   return value;
 }
 
-function setTextElementValueById(elementId, value){
-    const element = document.getElementById(elementId);
-    element.innerText = value;
+function setTextElementValueById(elementId, value) {
+  const element = document.getElementById(elementId);
+  element.innerText = value;
+}
+
+// Append seat info in the page
+function addSeatToPurchased(seatName, seatClass, SeatPrice) {
+  const purchasedSeatContainer = document.getElementById("purchasedSeat");
+  // set a div to append
+  const setDiv = document.createElement("div");
+  setDiv.classList.add("flex", "justify-between");
+  // add 3 paragraph tag
+  const seatNameElement = document.createElement("p");
+  seatNameElement.innerText = seatName;
+  const seatClassElement = document.createElement("p");
+  seatClassElement.innerText = seatClass;
+  const seatPriceElement = document.createElement("p");
+  seatPriceElement.innerText = SeatPrice;
+  //   Append paragraph tag to setDiv
+  setDiv.appendChild(seatNameElement);
+  setDiv.appendChild(seatClassElement);
+  setDiv.appendChild(seatPriceElement);
+  // Append setDiv to the purchased seats container
+  purchasedSeatContainer.appendChild(setDiv);
 }

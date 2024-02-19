@@ -24,6 +24,8 @@ function addBackgroundColorA1() {
   const currentSelectedSeat = getTextElementValueById("seatSelected");
   const selectedSeatCount = currentSelectedSeat + 1;
   setTextElementValueById("seatSelected", selectedSeatCount);
+  // Add the selected seat
+  addSeatToPurchased("A1", "Economoy", "550");
 }
 function addBackgroundColorA2() {
   addBackgroundColorById("a2");
@@ -35,6 +37,8 @@ function addBackgroundColorA2() {
   const currentSelectedSeat = getTextElementValueById("seatSelected");
   const selectedSeatCount = currentSelectedSeat + 1;
   setTextElementValueById("seatSelected", selectedSeatCount);
+  // Add the selected seat
+  addSeatToPurchased("A2", "Economoy", "550");
 }
 function addBackgroundColorA3() {
   addBackgroundColorById("a3");
@@ -46,6 +50,8 @@ function addBackgroundColorA3() {
   const currentSelectedSeat = getTextElementValueById("seatSelected");
   const selectedSeatCount = currentSelectedSeat + 1;
   setTextElementValueById("seatSelected", selectedSeatCount);
+  // Add the selected seat
+  addSeatToPurchased("A3", "Economoy", "550");
 }
 function addBackgroundColorA4() {
   addBackgroundColorById("a4");
@@ -57,6 +63,8 @@ function addBackgroundColorA4() {
   const currentSelectedSeat = getTextElementValueById("seatSelected");
   const selectedSeatCount = currentSelectedSeat + 1;
   setTextElementValueById("seatSelected", selectedSeatCount);
+  // Add the selected seat
+  addSeatToPurchased("A4", "Economoy", "550");
 }
 function addBackgroundColorB1() {
   addBackgroundColorById("b1");
@@ -68,6 +76,8 @@ function addBackgroundColorB1() {
   const currentSelectedSeat = getTextElementValueById("seatSelected");
   const selectedSeatCount = currentSelectedSeat + 1;
   setTextElementValueById("seatSelected", selectedSeatCount);
+  // Add the selected seat
+  addSeatToPurchased("B1", "Economoy", "550");
 }
 function addBackgroundColorB2() {
   addBackgroundColorById("b2");
@@ -79,6 +89,8 @@ function addBackgroundColorB2() {
   const currentSelectedSeat = getTextElementValueById("seatSelected");
   const selectedSeatCount = currentSelectedSeat + 1;
   setTextElementValueById("seatSelected", selectedSeatCount);
+  // Add the selected seat
+  addSeatToPurchased("B2", "Economoy", "550");
 }
 function addBackgroundColorB3() {
   addBackgroundColorById("b3");
@@ -90,6 +102,8 @@ function addBackgroundColorB3() {
   const currentSelectedSeat = getTextElementValueById("seatSelected");
   const selectedSeatCount = currentSelectedSeat + 1;
   setTextElementValueById("seatSelected", selectedSeatCount);
+  // Add the selected seat
+  addSeatToPurchased("B3", "Economoy", "550");
 }
 function addBackgroundColorB4() {
   addBackgroundColorById("b4");
@@ -101,4 +115,6 @@ function addBackgroundColorB4() {
   const currentSelectedSeat = getTextElementValueById("seatSelected");
   const selectedSeatCount = currentSelectedSeat + 1;
   setTextElementValueById("seatSelected", selectedSeatCount);
+  // Add the selected seat
+  addSeatToPurchased("B4", "Economoy", "550");
 }
