@@ -143,7 +143,7 @@
                                 </div>
                                 <button class="btn ">
                                     <img src="images/seat-green.png" alt="">
-                                    40 Seats left
+                                    <SPan id="seatRemained">8</SPan> Seats left
                                 </button>
                             </div>
                             <div class="flex flex-col px-8 bg-[#F7F8F8]"">
@@ -186,7 +186,7 @@
                             </p>
                             <p class="flex gap-1 items-center">
                                 <img src="images/seat-green-filled.png" alt="">
-                                Selected
+                               <span id="seatSelected">0</span> Selected
                             </p>
                         </div>
                         <div class="py-4 flex justify-end ">
@@ -202,23 +202,23 @@
 
                             </div>
                             <div class=" col-span-3 flex flex-col gap-6">
-                                <div class="btn">A1</div>
-                                <div class="btn">B1</div>
+                                <div onclick="addBackgroundColorA1()" id="a1" class="btn">A1</div>
+                                <div onclick="addBackgroundColorB1()" id="b1" class="btn">B1</div>
                             </div>
                             <div class=" col-span-3 flex flex-col gap-6">
-                                <div class="btn">A2</div>
-                                <div class="btn">B2</div>
+                                <div onclick="addBackgroundColorA2()" id="a2" class="btn">A2</div>
+                                <div onclick="addBackgroundColorB2()" id="b2" class="btn">B2</div>
                             </div>
                             <div class=" col-span-1">
 
                             </div>
                             <div class=" col-span-3 flex flex-col gap-6">
-                                <div class="btn">A3</div>
-                                <div class="btn">B3</div>
+                                <div onclick="addBackgroundColorA3()" id="a3" class="btn">A3</div>
+                                <div onclick="addBackgroundColorB3()" id="b3" class="btn">B3</div>
                             </div>
                             <div class=" col-span-3 flex flex-col gap-6">
-                                <div class="btn">A4</div>
-                                <div class="btn">B4</div>
+                                <div onclick="addBackgroundColorA4()" id="a4" class="btn">A4</div>
+                                <div onclick="addBackgroundColorB4()" id="b4" class="btn">B4</div>
                             </div>
                         </div>
                     </div>
